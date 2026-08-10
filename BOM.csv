@@ -1,0 +1,22 @@
+Item,Referencias,Quantidade,Valor/Componente,Footprint,Observacao
+1,U9,1,Blue Pill STM32F103,Blue_pill:YAAJ_BluePill_SWD_2,Confirmar variante exata do módulo e orientação
+2,U1,1,TSR2-2450,Converter_DCDC:Converter_DCDC_TRACO_TSR2-xxxx_THT,Conversor 12 V para 5 V
+3,U2,1,LM1117-3.3,LM117IMPX3.3:LM1117IMP_3.3_NOPB,Regulador 5 V para 3.3 V
+4,U3,1,SN65HVD230,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Transceptor CAN 3.3 V
+5,U4-U6,3,SRV05-4,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,Proteção dos pares de encoder; revisar máscara de solda
+6,U7-U8,2,AM26LV32xD,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,Receptores diferenciais 3.3 V
+7,C1,1,22 uF,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,Filtro de +12 V
+8,C2,1,10 uF,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,Filtro de +5 V
+9,C3,1,100 uF,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,Filtro de +3.3 V
+10,C4,1,100 nF,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,Revisar valor versus footprint polarizado
+11,C5-C6,2,100 nF,Capacitor_SMD:C_0805_2012Metric_HandSolder,Desacoplamento de +3.3 V
+12,C7,1,100 nF,Capacitor_SMD:C_0805_2012Metric_HandSolder,Reset NRST para GND
+13,FB1,1,Ferrite bead 0805,Inductor_SMD:L_0805_2012Metric_HandSolder,Filtro da alimentação do GPS; definir impedância e corrente
+14,R1-R7,7,120 Ohm,Resistor_SMD:R_0805_2012Metric_HandSolder,Terminação CAN e seis pares diferenciais
+15,SW1,1,FSMSM,Button_Switch_SMD:SW_SPST_FSMSM,Reset do STM32
+16,J1,1,PinSocket 1x04 2.54 mm,Connector_PinSocket_2.54mm:PinSocket_1x04,12 V CANH CANL GND
+17,J2-J3,2,PinSocket 1x08 2.54 mm,Connector_PinSocket_2.54mm:PinSocket_1x08,Entradas dos dois encoders
+18,J4,1,Conector GPS 2x20,conn_gps_female_2x20:conn_gps_female_2x20,Footprint customizado
+19,J5,1,Conector IMU 2x10,imu_connector_female_2x10:imu_connector_female_2x10,Footprint customizado
+20,JTAG_IMU1,1,PinSocket 1x04 2.54 mm,Connector_PinSocket_2.54mm:PinSocket_1x04,Pino 4 sem conexão; revisar GND
+

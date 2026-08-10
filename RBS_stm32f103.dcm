@@ -1,0 +1,157 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_ARM_JTAG_SWD_20
+D Standard IDC20 Male Connector, ARM legacy JTAG and SWD interface
+K IDC20 Male Connector ARM JTAG SWD
+F http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf
+$ENDCMP
+#
+$CMP DB25_Female_MountingHoles
+D 25-pin female D-SUB connector, Mounting Hole
+K female D-SUB connector
+F  ~
+$ENDCMP
+#
+$CMP SN65HVD231
+D CAN Bus Transceivers, 3.3V, 1Mbps,Ultra Low-Power capabilities, SOIC-8
+K can transeiver ti ulp low-power
+F http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf
+$ENDCMP
+#
+$CMP c_100n
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP c_10n
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP c_10u
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP c_1u
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP c_20p
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP d_1N4148WS
+D 75V 0.15A Fast switching Diode, SOD-323
+K diode
+F https://www.vishay.com/docs/85751/1n4148ws.pdf
+$ENDCMP
+#
+$CMP j_Conn_01x04_Male_2mm
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP oc_ps2701a-1-f3
+D DC Optocoupler, Vce 35V, CTR 50-300%, sop-4
+K NPN DC Optocoupler
+$ENDCMP
+#
+$CMP q_PMBT3904
+D 100mA IC, 65V Vce, Dual NPN/NPN Transistors, SOT-363
+K NPN/NPN Transistor
+$ENDCMP
+#
+$CMP r_100K
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_10K
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_120
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_1K
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_390
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_470
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_4K7
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP r_5K
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP sw_FSMSM
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+$CMP u_LM358
+D Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8
+K dual opamp
+F http://www.ti.com/lit/ds/symlink/lm358.pdf
+$ENDCMP
+#
+$CMP u_MAX232CSE
+D Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C
+K rs232 uart transceiver line-driver
+F http://www.ti.com/lit/ds/symlink/max232.pdf
+$ENDCMP
+#
+$CMP u_MC3486d
+D Quadruple differential line receiver, SOIC-16
+K Quadruple differential line receiver
+F http://www.ti.com/lit/ds/symlink/mc3486.pdf
+$ENDCMP
+#
+$CMP u_SN65HVD230
+D CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8
+K can transeiver ti low-power
+F http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf
+$ENDCMP
+#
+$CMP x_8MHz
+D Two pin crystal
+K quartz ceramic resonator oscillator
+F https://datasheet.octopart.com/ABLS2-8.000MHZ-D4Y-T-Abracon-datasheet-10047767.pdf
+$ENDCMP
+#
+#End Doc Library

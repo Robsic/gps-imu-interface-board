@@ -1,0 +1,7 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "imu_conn") (type "Legacy") (uri "${KIPRJMOD}/IMU_GPS_Blue_Pill/conn_02x10_top_bottom_imu.lib") (options "") (descr ""))
+	(lib (name "Blue_pill") (type "Legacy") (uri "${KIPRJMOD}/Kicad-STM32-master/Symbols/YAAJ_BluePill_Part_Like_SWD_Breakout.lib") (options "") (descr ""))
+	(lib (name "YAAJ_BluePill_Part_Like_SWD_Breakout") (type "Legacy") (uri "${KIPRJMOD}/Kicad-STM32-master/Symbols/YAAJ_BluePill_Part_Like_SWD_Breakout.lib") (options "") (descr ""))
+	(lib (name "IMU_board-cache") (type "Legacy") (uri "/home/ryan/Documentos/Robsic Carrinho/atualizado exertacted/Robsic---imu-board-design-with-gps-master/IMU_GPS_Blue_Pill/IMU_board-cache.lib") (options "") (descr "Biblioteca de cache do projeto legado"))
+)

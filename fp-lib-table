@@ -1,0 +1,7 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Blue_pill") (type "KiCad") (uri "${KIPRJMOD}/Kicad-STM32-master/Footprints") (options "") (descr ""))
+	(lib (name "LM117IMPX3.3") (type "KiCad") (uri "${KIPRJMOD}/Kicad-STM32-master/LM1117IMPX-3.3_NOPB(1)") (options "") (descr ""))
+	(lib (name "imu_connector_female_2x10") (type "KiCad") (uri "${KIPRJMOD}/imu_connector_female_2x10.pretty") (options "") (descr ""))
+	(lib (name "conn_gps_female_2x20") (type "KiCad") (uri "${KIPRJMOD}/conn_gps_female_2x20.pretty") (options "") (descr ""))
+)

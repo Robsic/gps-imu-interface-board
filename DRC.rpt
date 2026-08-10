@@ -1,0 +1,87 @@
+** Drc report for IMU_board.kicad_pcb **
+** Created on 2026-07-30T21:07:52 **
+** Report includes: Errors, Warnings **
+
+** Found 18 DRC violations **
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(124.7250 mm, 85.0500 mm): Ilha 1 [/Z_Esq] de U6 no F.Cu
+    @(124.7250 mm, 86.0000 mm): Ilha 2 [GND] de U6 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(116.2750 mm, 74.0000 mm): Ilha 1 [/A_Dir] de U5 no F.Cu
+    @(116.2750 mm, 73.0500 mm): Ilha 2 [GND] de U5 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(124.7250 mm, 86.0000 mm): Ilha 2 [GND] de U6 no F.Cu
+    @(124.7250 mm, 86.9500 mm): Ilha 3 [/~Z_Esq] de U6 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(116.2750 mm, 73.0500 mm): Ilha 2 [GND] de U5 no F.Cu
+    @(116.2750 mm, 72.1000 mm): Ilha 3 [/~A_Dir] de U5 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(127.0000 mm, 86.9500 mm): Ilha 4 [/Z_Dir] de U6 no F.Cu
+    @(127.0000 mm, 86.0000 mm): Ilha 5 [+5V] de U6 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(114.0000 mm, 72.1000 mm): Ilha 4 [/B_Dir] de U5 no F.Cu
+    @(114.0000 mm, 73.0500 mm): Ilha 5 [+5V] de U5 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(127.0000 mm, 86.0000 mm): Ilha 5 [+5V] de U6 no F.Cu
+    @(127.0000 mm, 85.0500 mm): Ilha 6 [/~Z_Dir] de U6 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(114.0000 mm, 73.0500 mm): Ilha 5 [+5V] de U5 no F.Cu
+    @(114.0000 mm, 74.0000 mm): Ilha 6 [/~B_Dir] de U5 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(116.2750 mm, 55.0000 mm): Ilha 1 [/A_Esq] de U4 no F.Cu
+    @(116.2750 mm, 54.0500 mm): Ilha 2 [GND] de U4 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(116.2750 mm, 54.0500 mm): Ilha 2 [GND] de U4 no F.Cu
+    @(116.2750 mm, 53.1000 mm): Ilha 3 [/~A_Esq] de U4 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(114.0000 mm, 53.1000 mm): Ilha 4 [/B_Esq] de U4 no F.Cu
+    @(114.0000 mm, 54.0500 mm): Ilha 5 [+5V] de U4 no F.Cu
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(114.0000 mm, 54.0500 mm): Ilha 5 [+5V] de U4 no F.Cu
+    @(114.0000 mm, 55.0000 mm): Ilha 6 [/~B_Esq] de U4 no F.Cu
+[mirrored_text_on_front_layer]: Mirrored text on front layer
+    Local override; warning
+    @(120.4600 mm, 101.8100 mm): Texto da PCI 'X
+' em F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: configuração da serigrafia da placa; warning
+    @(213.9000 mm, 92.4250 mm): Segmento de J5 em F.Silkscreen
+    @(196.1475 mm, 92.5650 mm): Campo de referência do J4
+[silk_overlap]: Silkscreen clearance
+    Rule: configuração da serigrafia da placa; warning
+    @(196.1750 mm, 91.0750 mm): Campo de referência do J5
+    @(214.8425 mm, 91.0900 mm): Segmento de J4 em F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(138.6740 mm, 108.2647 mm): Segmento de U2 em F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(144.2620 mm, 111.8027 mm): Segmento de U2 em F.Silkscreen
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(127.4750 mm, 51.1500 mm): Trilha [+3.3V] no F.Cu, comprimento 0.7071 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

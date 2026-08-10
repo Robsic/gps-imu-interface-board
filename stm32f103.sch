@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L stm32f103:sw_FSMSM SW1
+U 1 1 61D03961
+P 4400 950
+F 0 "SW1" V 4354 1098 50  0000 L CNN
+F 1 "sw_FSMSM" V 4445 1098 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 4400 1150 50  0001 C CNN
+F 3 "~" H 4400 1150 50  0001 C CNN
+F 4 "FSMSM" H 4400 950 50  0001 C CNN "MPN"
+	1    4400 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L stm32f103:c_100n C3
+U 1 1 61D05C96
+P 3950 950
+F 0 "C3" H 4065 950 50  0000 L CNN
+F 1 "c_100n" H 3975 850 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3988 800 50  0001 C CNN
+F 3 "~" H 3950 950 50  0001 C CNN
+F 4 "08055C104KAT2A" H 3950 950 50  0001 C CNN "MPN"
+	1    3950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61D067C0
+P 3950 1200
+F 0 "#PWR07" H 3950 950 50  0001 C CNN
+F 1 "GND" H 3955 1027 50  0000 C CNN
+F 2 "" H 3950 1200 50  0001 C CNN
+F 3 "" H 3950 1200 50  0001 C CNN
+	1    3950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1200 3950 1150
+Wire Wire Line
+	4400 1150 3950 1150
+Connection ~ 3950 1150
+Wire Wire Line
+	3950 1150 3950 1100
+Wire Wire Line
+	3950 800  3950 750 
+Wire Wire Line
+	3950 750  4400 750 
+Wire Wire Line
+	4400 750  4700 750 
+Connection ~ 4400 750 
+Text Label 4700 750  2    50   ~ 0
+nrst
+Wire Wire Line
+	6750 2850 6900 2850
+Wire Wire Line
+	6900 2850 6900 2750
+Wire Wire Line
+	6900 2750 6750 2750
+$Comp
+L power:GND #PWR0103
+U 1 1 61F1FBD5
+P 6900 2750
+F 0 "#PWR0103" H 6900 2500 50  0001 C CNN
+F 1 "GND" H 6905 2577 50  0000 C CNN
+F 2 "" H 6900 2750 50  0001 C CNN
+F 3 "" H 6900 2750 50  0001 C CNN
+	1    6900 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 4650 4750 4550
+$Comp
+L power:GND #PWR0104
+U 1 1 61F2EB01
+P 4750 4650
+F 0 "#PWR0104" H 4750 4400 50  0001 C CNN
+F 1 "GND" H 4755 4477 50  0000 C CNN
+F 2 "" H 4750 4650 50  0001 C CNN
+F 3 "" H 4750 4650 50  0001 C CNN
+	1    4750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4550 4950 4550
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 61F35B85
+P 7150 2750
+F 0 "#PWR0105" H 7150 2600 50  0001 C CNN
+F 1 "+3.3V" H 7165 2923 50  0000 C CNN
+F 2 "" H 7150 2750 50  0001 C CNN
+F 3 "" H 7150 2750 50  0001 C CNN
+	1    7150 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2750
+Wire Wire Line
+	6750 2950 7150 2950
+Wire Wire Line
+	7150 2950 7150 2750
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 61F4B11F
+P 4950 4800
+F 0 "#PWR0106" H 4950 4650 50  0001 C CNN
+F 1 "+3.3V" H 4965 4973 50  0000 C CNN
+F 2 "" H 4950 4800 50  0001 C CNN
+F 3 "" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 4800 4950 4650
+Text HLabel 4750 3550 0    50   Output ~ 0
+can_tx
+Text HLabel 4750 3450 0    50   Input ~ 0
+can_rx
+Wire Wire Line
+	4750 3550 4950 3550
+Wire Wire Line
+	4750 3450 4950 3450
+Text HLabel 6750 4050 2    50   Output ~ 0
+uart_tx_out_imu
+Text HLabel 6750 3950 2    50   Input ~ 0
+uart_rx_in_imu
+Text Label 7000 3050 0    50   ~ 0
+nrst
+Wire Wire Line
+	6750 3050 7000 3050
+NoConn ~ 6750 3150
+NoConn ~ 6750 3250
+NoConn ~ 6750 3350
+NoConn ~ 6750 3450
+NoConn ~ 6750 3550
+NoConn ~ 6750 3650
+NoConn ~ 6750 3750
+NoConn ~ 6750 3850
+NoConn ~ 6750 4150
+NoConn ~ 6750 4250
+NoConn ~ 6750 4350
+NoConn ~ 6750 4450
+NoConn ~ 6750 4550
+NoConn ~ 6750 4650
+NoConn ~ 4950 4450
+NoConn ~ 4950 4350
+NoConn ~ 4950 4250
+NoConn ~ 4950 4150
+NoConn ~ 4950 4050
+NoConn ~ 4950 3950
+NoConn ~ 4950 3850
+NoConn ~ 4950 3750
+NoConn ~ 4950 3650
+NoConn ~ 4950 3350
+NoConn ~ 4950 3250
+NoConn ~ 4950 3150
+NoConn ~ 4950 3050
+NoConn ~ 4950 2950
+NoConn ~ 4950 2850
+NoConn ~ 4950 2750
+$Comp
+L Blue_Pill:YAAJ_BluePill_Part_Like_SWD_Breakout U3
+U 1 1 6200A265
+P 5850 3650
+F 0 "U3" H 5850 4815 50  0000 C CNN
+F 1 "YAAJ_BluePill_Part_Like_SWD_Breakout" H 5850 4724 50  0000 C CNN
+F 2 "Blue_pill:YAAJ_BluePill_SWD_2" H 6650 2650 50  0001 C CNN
+F 3 "" H 6650 2650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
