@@ -4,6 +4,8 @@ Placa de aquisição e comunicação para o carrinho elétrico RobSIC, baseada e
 
 > **Status:** projeto em desenvolvimento e **não liberado para fabricação**. O relatório DRC fornecido registra 20 violações: 12 de máscara de solda, 5 de clearance, 1 texto espelhado e 2 conflitos de silk sobre cobre.
 
+> **Simulação funcional:** a integração GPS/NMEA, UART, pacote ACEINNA `e2`, CRC e estímulos de IMU/encoders foi exercitada no Proteus 9.1. CAN, desempenho dos sensores reais e comportamento elétrico permanecem pendentes de bancada.
+
 ## Arquitetura
 
 ```mermaid
@@ -16,6 +18,34 @@ flowchart TD
     MCU <-->|"UART"| IMU["Módulo IMU — J5"]
     IMU <-->|"UART2"| GPS["Módulo GPS — J4"]
 ```
+
+## Simulação e validação no Proteus
+
+O ensaio utiliza duas Blue Pills:
+
+- `U1`: controlador principal da placa;
+- `U2`: emulador funcional do OpenIMU300ZI;
+- `VGPS`: fonte de mensagens NMEA;
+- dois terminais virtuais para observar o NMEA a 9600 baud e o diagnóstico da U1 a 115200 baud.
+
+![Validação funcional no Proteus](simulation/proteus/evidence/proteus-validation-v2.6.png)
+
+Resultados confirmados na simulação:
+
+- recepção das mensagens NMEA `GGA`, `RMC` e `GSA`;
+- detecção de `GPS=FIX` e hemisférios `NW`;
+- transmissão U2 → U1 a 115200 baud;
+- recepção de pacotes ACEINNA `e2` com `CRC=OK`;
+- contador de pacotes crescente, `CRC_ERR=0` e `RX_OVF=0`;
+- transporte de dados sintéticos de orientação, aceleração e encoders.
+
+Limitações conhecidas:
+
+- a conversão decimal de latitude/longitude não é confiável no modelo VSM de terceiros da Blue Pill; as coordenadas NMEA de entrada estão corretas;
+- o CAN não é suportado de forma confiável por esse modelo e aparece como `CAN=NA(PROTEUS)`;
+- os dados de IMU e encoders são estímulos funcionais, não medições de sensores físicos.
+
+Arquivos, firmware e procedimento completo: [simulação Proteus](simulation/proteus/README.md).
 
 ## Características extraídas dos arquivos
 
@@ -85,6 +115,7 @@ gps-imu-interface-board/
 - [Firmware e mapa do STM32](docs/FIRMWARE.md)
 - [Validação e DRC](docs/VALIDATION.md)
 - [Preparação e envio ao GitHub](docs/GITHUB.md)
+- [Simulação funcional no Proteus 9.1](simulation/proteus/README.md)
 - [Lista de materiais](BOM.csv)
 
 ## Pendências críticas
@@ -95,7 +126,7 @@ gps-imu-interface-board/
 - adicionar GND ao cabeçalho de programação da IMU ou documentar ponto de referência externo;
 - confirmar o footprint polarizado de C4, marcado como 100 nF;
 - confirmar pinagem física dos módulos GPS e IMU com os respectivos datasheets;
-- incluir firmware, configuração STM32CubeMX/CubeIDE e protocolo CAN;
+- desenvolver o firmware de produção, configuração STM32CubeMX/CubeIDE e protocolo CAN; o firmware incluído em `simulation/` é exclusivo para validação funcional;
 - validar entrada de 12 V e proteções para uso veicular;
 - gerar pacote de fabricação somente depois da liberação.
 
@@ -106,4 +137,3 @@ Nenhuma licença foi definida. Antes de tornar o repositório público, escolha 
 ## Responsável
 
 Vinícius Corcínio Silva — projeto RobSIC.
-

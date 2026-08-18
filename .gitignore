@@ -26,9 +26,17 @@ manufacturing/tmp/
 *.drl
 *.pos
 
+# Proteus
+_autosave-*
+*.pdsbak
+*.workspace
+*.log
+
+# Firmware build products
+simulation/proteus/firmware/*/build/
+
 # Sistema operacional e editores
-.DS_Store
-Thumbs.db
 .vscode/
 .idea/
-
+.DS_Store
+Thumbs.db
