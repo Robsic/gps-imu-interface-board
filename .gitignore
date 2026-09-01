@@ -1,0 +1,23 @@
+# KiCad
+*.lck
+~*.kicad_sch
+~*.kicad_pcb
+*~
+*.bak
+*.bak_*
+IMU_board-backups/
+fp-info-cache
+*.kicad_prl
+*.kicad_pcb.lck
+*.kicad_pro.lck
+*.dsn.bak
+*.ses.bak
+
+# Gerados
+# *.pdf
+# *.dsn
+# *.ses
+
+# SO
+.DS_Store
+Thumbs.db

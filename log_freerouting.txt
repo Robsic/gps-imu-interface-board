@@ -1,0 +1,3 @@
+2026-07-30 18:47:24.989 INFO   Freerouting v2.2.4 (build-date: 2026-07-30)
+2026-07-30 18:47:26.228 INFO   Opening 'IMU_board.dsn'...
+2026-07-30 18:47:27.032 INFO   New version available: v2.2.4
