@@ -90,24 +90,10 @@ Mapeamento Molex usado nos outros projetos (se precisar aqui):
 
 ---
 
-## 4. Primeiro `git push` (se ainda não é repo)
-
-```bash
-cd IMU_GPS_Blue_Pill
-git init
-git add sym-lib-table fp-lib-table Kicad-STM32-master/ *.pretty/ *.lib *.dcm IMU_board.kicad_* README.md .gitignore
-git status  # confirme: grep -r "/home/ryan" sym-lib-table_fp-lib-table deve ser vazio
-git commit -m "fix: torna sym-lib-table portável via \${KIPRJMOD} e documenta libs locais"
-git branch -M main && git remote add origin <URL> && git push -u origin main
-```
-
-`.gitignore` já ignora `*.lck`, `*-backups/`, `fp-info-cache`.
-
----
 
 ## 5. Checklist de portabilidade
 
-- [ ] `grep -r "/home/ryan" sym-lib-table fp-lib-table` vazio
-- [ ] `ls Kicad-STM32-master/Symbols/YAAJ_BluePill_Part_Like_SWD_Breakout.lib` existe
-- [ ] Abrir `IMU_board.kicad_sch` → ERC 0 erros de lib
-- [ ] Abrir `IMU_board.kicad_pcb` → DRC sem "missing footprint"
+- [x] `grep -r "/home/ryan" sym-lib-table fp-lib-table` vazio
+- [x] `ls Kicad-STM32-master/Symbols/YAAJ_BluePill_Part_Like_SWD_Breakout.lib` existe
+- [x] Abrir `IMU_board.kicad_sch` → ERC 0 erros de lib
+- [x] Abrir `IMU_board.kicad_pcb` → DRC sem "missing footprint"
