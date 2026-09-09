@@ -1,0 +1,48 @@
+# KiCad: temporários e preferências locais
+*-backups/
+*.kicad_prl
+*.kicad_sch.lck
+*.kicad_pcb.lck
+*.lck
+*~
+fp-info-cache
+
+# Backups legados
+*.bak
+*.bck
+*.sch-bak
+*.kicad_pcb-bak
+
+# Autorroteamento temporário
+*.dsn
+*.ses
+*.rules
+log_freerouting.txt
+
+# Preservar os arquivos finais de intercâmbio do Freerouting
+!trilhas/
+!trilhas/*.dsn
+!trilhas/*.ses
+!trilhas/*.rules
+
+# Saídas temporárias de fabricação
+manufacturing/tmp/
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+
+# Proteus
+_autosave-*
+*.pdsbak
+*.workspace
+*.log
+
+# Firmware build products
+simulation/proteus/firmware/*/build/
+
+# Sistema operacional e editores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
