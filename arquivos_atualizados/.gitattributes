@@ -1,0 +1,12 @@
+*.hex binary
+*.pdsprj binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.bin binary
+*.step binary
+*.STEP binary
+*.stp binary
+*.wrl binary
+*.SLDPRT binary

@@ -1,0 +1,39 @@
+RESISTORES 
+
+1 unidade de 120 Ohm
+1 unidade de 100 kOhm
+1 unidade de 390 Ohm
+
+CAPACITORES
+
+2 unidade de 20pF
+1 unidade de 100nF
+
+CRISTAL
+8 MHz
+
+REGULADOR DE TENSÃO
+
+12V para 3.3V
+
+CONECTORES
+
+- 4 pinos (Entrada e saida de dados mais alimentação )
+- 3 pinos  (Boot 0)
+- Jtag
+- 40 pinos GPS 
+- 20 pinos IMU
+
+BOTÃO
+
+1 unidade
+
+MICROCONTROLADOR
+
+1 unidade stm32f103ret6tr
+
+tranceiver
+
+1 unidade n65hvd230
+
+
